@@ -270,6 +270,9 @@
     function login() {
       UserService.login(vm.user.email, vm.user.password).then(function(response){
         UserService.setAuthenticatedAccount(response.data);
+        console.log("--- Start Login ---");
+        console.log(response.data);
+        console.log("--- End Login ---");
         if (UserService.getAuthenticatedAccount().is_admin) {
           $state.go('admin.propostas.painel');
         } else {

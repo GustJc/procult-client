@@ -165,8 +165,8 @@ gulp.task('jshint', function () {
 });
 
 gulp.task('webserver', function() {
-	//gulp.src('./src')
-	gulp.src(paths.dist.root)
+	gulp.src('./src')
+	//gulp.src(paths.dist.root)
 	.pipe(webserver({
 		host: '0.0.0.0',
 		port: 5000
@@ -185,4 +185,4 @@ gulp.task('build:prod', ['clean', 'usemin:prod', 'usemin:fonts', 'imagemin', 'ht
 
 gulp.task('default', ['build']);
 
-//require('es6-promise').polyfill();
+require('es6-promise').polyfill();

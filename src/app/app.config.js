@@ -89,7 +89,7 @@
         admin: false,
         views: {
           'content@admin': {
-            templateUrl: 'proposal/proposal.html'
+            templateUrl: '../app/proposal/proposal.html'
           }
         },
         data: {
@@ -103,7 +103,7 @@
         admin: false,
         views: {
           'content@admin': {
-            templateUrl: 'proposal/comunicate.html'
+            templateUrl: '../app/proposal/comunicate.html'
           }
         },
         data: {
@@ -117,7 +117,7 @@
         admin: false,
         views: {
           'content@admin': {
-            templateUrl: 'proposal/proposal_new.html'
+            templateUrl: '../app/proposal/proposal_new.html'
           }
         },
         data: {
@@ -131,7 +131,7 @@
         admin: false,
         views: {
           'content@admin': {
-            templateUrl: 'proposal/proposal_receipt.html'
+            templateUrl: '../app/proposal/proposal_receipt.html'
           }
         },
         data: {
@@ -145,7 +145,7 @@
         admin: false,
         views: {
           'content@admin': {
-            templateUrl: 'proposal/proposal_receipt_print.html'
+            templateUrl: '../app/proposal/proposal_receipt_print.html'
           }
         },
         data: {
@@ -161,7 +161,7 @@
         admin: false,
         views: {
           'content@admin': {
-            templateUrl: 'proposal/proposal_update.html'
+            templateUrl: '../app/proposal/proposal_update.html'
           }
         },
         data: {
@@ -175,7 +175,7 @@
         admin: true,
         views: {
           'content@admin': {
-            templateUrl: 'proposal/dashboard.html'
+            templateUrl: '../app/proposal/dashboard.html'
           }
         },
         data: {
@@ -189,7 +189,7 @@
         admin: true,
         views: {
           'content@admin': {
-            templateUrl: 'proposal/proposal_analysis.html'
+            templateUrl: '../app/proposal/proposal_analysis.html'
           }
         },
         data: {
@@ -203,7 +203,7 @@
         admin: true,
         views: {
           'content@admin': {
-            templateUrl: 'proposal/proposal_detail.html'
+            templateUrl: '../app/proposal/proposal_detail.html'
           }
         },
         data: {
@@ -217,7 +217,7 @@
         admin: true,
         views: {
           'content@admin': {
-            templateUrl: 'artist/artist_list.html'
+            templateUrl: '../app/artist/artist_list.html'
           }
         },
         data: {
@@ -231,7 +231,7 @@
         url: '/usuarios',
         views: {
           'content@admin': {
-            templateUrl: 'user/user_list.html'
+            templateUrl: '../app/user/user_list.html'
           }
         },
         data: {
@@ -245,7 +245,7 @@
         url: '/usuarios/novo',
         views: {
           'content@admin': {
-            templateUrl: 'user/register.html'
+            templateUrl: '../app/user/register.html'
           }
         },
         data: {
@@ -259,7 +259,7 @@
         url: '/usuarios/:id/atualizar',
         views: {
           'content@admin': {
-            templateUrl: 'user/user_update.html'
+            templateUrl: '../app/user/user_update.html'
           }
         }
       })
@@ -270,7 +270,7 @@
         url: '/usuarios/:id/perfil',
         views: {
           'content@admin': {
-            templateUrl: 'user/user_profile.html'
+            templateUrl: '../app/user/user_profile.html'
           }
         },
         data: {
@@ -284,7 +284,7 @@
         url: '/usuarios/:id/senha/alterar',
         views: {
           'content@admin': {
-            templateUrl: 'user/user_changepassword.html'
+            templateUrl: '../app/user/user_changepassword.html'
           }
         },
         data: {
@@ -298,7 +298,7 @@
         admin: false,
         views: {
           'content@simple': {
-            templateUrl: 'user/register.html'
+            templateUrl: '../app/user/register.html'
           }
         },
         data: {
@@ -312,7 +312,7 @@
         admin: false,
         views: {
           'content@simple': {
-            templateUrl: 'user/login.html'
+            templateUrl: '../app/user/login.html'
           }
         },
         data: {
