@@ -276,13 +276,7 @@
         if (UserService.getAuthenticatedAccount().is_admin) {
           $state.go('admin.propostas.painel');
         } else {
-          UserService.canCreateProposal().then(function(response){
-            if (response.data.is_available) {
-              $state.go('admin.propostas.painel');
-            } else {
-              $state.go('admin.comunicado');
-            }
-          });
+          $state.go('admin.editais');
         }
       }, function(error){
         if(error.status === -1) {
