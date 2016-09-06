@@ -171,7 +171,7 @@
       })
       .state('admin.propostas.painel', {
         parent: 'admin',
-        url: '/propostas/painel',
+        url: '/painel/:id/',
         authenticate: true,
         admin: true,
         views: {
@@ -183,9 +183,51 @@
           title: 'Painel de Controle'
         }
       })
+      .state('admin.editais.painel', {
+        parent: 'admin',
+        url: '/painel',
+        authenticate: true,
+        admin: true,
+        views: {
+          'content@admin': {
+            templateUrl: '../app/edital/edital_dashboard.html'
+          }
+        },
+        data: {
+          title: 'Painel de Controle'
+        }
+      })
+      .state('admin.editais.novo', {
+        parent: 'admin',
+        url: '/edital/novo',
+        authenticate: true,
+        admin: true,
+        views: {
+          'content@admin': {
+            templateUrl: '../app/edital/edital_new.html'
+          }
+        },
+        data: {
+          title: 'Novo Edital'
+        }
+      })
+      .state('admin.editais.editar', {
+        parent: 'admin',
+        url: '/edital/:id/atualizar',
+        authenticate: true,
+        admin: true,
+        views: {
+          'content@admin': {
+            templateUrl: '../app/edital/edital_update.html'
+          }
+        },
+        data: {
+          title: 'Novo Edital'
+        }
+      })
       .state('admin.propostas.analise', {
         parent: 'admin',
-        url: '/propostas/analise',
+        url: '/analise',
         authenticate: true,
         admin: true,
         views: {

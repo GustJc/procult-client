@@ -222,7 +222,6 @@
 		function sendProposal() {
 			showDialog();
 			vm.proposal.notice = vm.edital_id
-			alert(vm.proposal.notice);
 			ProposalService.sendProposal(vm.proposal).then(function(response) {
 				if(response.status === 201) {
 					ProposalService.setProposalSelected(response.data);
